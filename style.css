@@ -1,0 +1,24 @@
+/* navbar */
+.custom-nav-butn {
+    background-color: #5fcac7 !important;
+    border-color: #5fcac7 !important;
+    color: #ffffff !important;
+    border-radius: 50px;
+
+}
+
+/* icon color */
+.custom-colr {
+    color: rgb(75, 67, 66);
+
+}
+
+/* hero section */
+.hero-text {
+    background-color: antiquewhite;
+}
+
+.custom-white {
+
+    color:rgb(255, 255, 255);
+}
