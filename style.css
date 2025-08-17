@@ -4,7 +4,6 @@
     border-color: #5fcac7 !important;
     color: #ffffff !important;
     border-radius: 50px;
-
 }
 
 /* icon color */
@@ -15,10 +14,73 @@
 
 /* hero section */
 .hero-text {
-    background-color: antiquewhite;
+    
 }
 
 .custom-white {
 
     color:rgb(255, 255, 255);
+}
+
+
+/* Hero section wrapper */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* YouTube iframe as background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* taki click iframe pr na ho */
+    object-fit: cover;
+}
+
+/* Overlay text */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Dark overlay for readability */
+/* .hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+} */
+
+/* bootstrap custom css */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* halka dark overlay */
+  z-index: 1;
+}
+
+/* make sure content upar aaye */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
 }
