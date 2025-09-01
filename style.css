@@ -8,6 +8,7 @@ body {
 
   font-family: "DM Sans", sans-serif;
 }
+
 /* navbar button */
 .custom-nav-butn {
   background-color: #5fcac7 !important;
@@ -29,7 +30,8 @@ body {
 
 /* logo responsive */
 .logo-img {
-  height: 120px; /* default */
+  height: 120px;
+  /* default */
 }
 
 @media (max-width: 991px) {
@@ -38,25 +40,6 @@ body {
   }
 }
 
-
-/* hero section */
-/* .hero-text h1 {
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 50px;
-}
-
- h2{
-   color: rgb(75, 67, 66);
-  font-size: 58px;
-}
-
-@media (min-width: 992px) { 
-  .hero-text h1  {
-    font-size: 72px; 
-    line-height: 80px;
-  }
-} */
 
 /* 3rd layout */
 /* Hero text layout fix */
@@ -73,7 +56,7 @@ body {
 }
 
 .hero-text .px-4 {
-  margin-top: 4rem !important; /* same spacing as before */
+  margin-top: 4rem !important;
 }
 
 .custom-white {
@@ -91,7 +74,6 @@ body {
   z-index: 1;
 }
 
-/* make sure content upar aaye */
 .hero-section .container {
   position: relative;
   z-index: 2;
@@ -111,6 +93,7 @@ body {
 .rounded-border {
   border-radius: 13px;
 }
+
 .custom-icon {
   font-size: 70px;
   color: white;
@@ -118,7 +101,8 @@ body {
 
 /* section 3 */
 .section-3 {
-  position: relative; /* overlay ke liye */
+  position: relative;
+  /* overlay ke liye */
   background-image: url('./images/bgimg2.jpg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -134,7 +118,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(95, 202, 199,0.8);
+  background-color: rgb(95, 202, 199, 0.8);
   z-index: 1;
 }
 
@@ -164,24 +148,26 @@ body {
   border-radius: 15px;
 
 }
+
 /* section 4 */
 
-.section-4 h1{
+.section-4 h1 {
   color: rgb(75, 67, 66);
   font-size: 58px;
 }
+
 /* section 5 */
 .section-5 {
   color: rgb(75, 67, 66);
   position: relative;
-  background-image: url('./images/bgimg0.3.jpg'); /* main background */
+  background-image: url('./images/bgimg0.3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 
-/* overlay image */
+
 .section-5::after {
   content: "";
   position: absolute;
@@ -193,11 +179,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6; /* overlay transparency*/
+  opacity: 0.6;
   z-index: 1;
 }
 
-/* content upar lane ke liye */
 .section-5 .container {
   position: relative;
   z-index: 2;
@@ -211,18 +196,23 @@ body {
   padding: 80px 0;
   color: #fff;
 }
+
 .testimonial-overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0.7;
   background-color: rgb(255, 145, 164);
   z-index: 1;
 }
+
 .testimonial-content {
   position: relative;
   z-index: 2;
 }
+
 .testimonial img {
   width: 60px;
   height: 60px;
@@ -230,3 +220,155 @@ body {
   border-radius: 50%;
 }
 
+/* section 7 */
+.section-7 {
+  background-color: #fff;
+  color: rgb(75, 67, 66);
+  font-family: "DM Sans", sans-serif;
+  line-height: 2.5;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-7 table th {
+  color: rgb(145, 157, 171);
+  font-weight: 400;
+}
+
+.custom-table th {
+  font-size: 24px;
+}
+
+.custom-table td {
+  color: rgb(75, 67, 66);
+  border-bottom: 1px solid rgb(145, 157, 171);
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.info-card {
+  background-color: #f7f6f8;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.info-card h5 {
+  font-size: 22px;
+}
+
+.info-card p {
+  color: rgb(95, 202, 199);
+}
+
+.info-card a {
+  color: rgb(95, 202, 199);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* form section */
+
+.form-section {
+  background-image: url('./images/bgimg5.jpg');
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+.form-content {
+  position: relative;
+  z-index: 2;
+}
+
+.form-section p {
+  color: rgba(255, 255, 255, 1);
+}
+
+.form-section h1 {
+  color:
+    rgb(255, 255, 255);
+  font-size: 58px;
+}
+
+.custom-color {
+  color: #ffffff !important;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.form-btun {
+  background-color: #5fcac7 !important;
+  border-color: #5fcac7 !important;
+  color: #ffffff !important;
+  border-radius: 50px;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+
+}
+
+.form-btun:hover {
+  background-color: #4aa9a7 !important;
+  border-color: #4aa9a7 !important;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.custom-border {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 84px 0px rgba(0, 0, 0, 0.07);
+
+}
+
+/* footer */
+
+
+.footer {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+  color: #fff;
+}

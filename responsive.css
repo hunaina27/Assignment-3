@@ -28,14 +28,14 @@
 
 /* TESTIMONIAL FIX */
 .testimonial p {
-  max-width: 90%; /* mobile ke liye */
+  max-width: 90%; /* mobile*/
   margin: 0 auto;
   font-size: 0.95rem;
 }
 
 @media (min-width: 992px) {
   .testimonial p {
-    max-width: 75%; /* desktop me narrow width */
+    max-width: 75%; /* desktop */
   }
 }
 
