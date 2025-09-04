@@ -271,7 +271,6 @@ h2 {
 }
 
 /* form section */
-
 .form-section {
   background-image: url('./images/bgimg5.jpg');
   position: relative;
@@ -282,7 +281,6 @@ h2 {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-
 
 .form-overlay {
   position: absolute;
@@ -298,6 +296,7 @@ h2 {
 .form-content {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .form-section p {
@@ -305,43 +304,63 @@ h2 {
 }
 
 .form-section h1 {
-  color:
-    rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 58px;
 }
 
+/* Input field */
 .custom-color {
-  color: #ffffff !important;
-  border-radius: 50px;
-  background-color: transparent;
+  color: #ffffff !important; 
+  background-color: transparent; 
+  border: 1px solid #ffffff; 
+  border-radius: 50px 0 0 50px;
+  padding: 1rem;
+  transition: all 0.3s ease;
 }
 
+/* Placeholder default color */
+.custom-color::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.custom-color:focus {
+  background-color: #ffffff;
+  color: #333333;
+  border-color: #5fcac7;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(95, 202, 199, 0.25);
+}
+
+/* Placeholder*/
+.custom-color:focus::placeholder {
+  color: grey;
+}
+
+/* Button */
 .form-btun {
   background-color: #5fcac7 !important;
   border-color: #5fcac7 !important;
   color: #ffffff !important;
-  border-radius: 50px;
+  border-radius: 0 50px 50px 0; 
+  padding: 1rem 2rem;
   transition: background-color 0.5s ease, border-color 0.5s ease;
-
 }
 
+/* Button hover */
 .form-btun:hover {
   background-color: #4aa9a7 !important;
   border-color: #4aa9a7 !important;
-  color: rgba(255, 255, 255, 1);
-
+  color: #ffffff;
 }
 
 .custom-border {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 84px 0px rgba(0, 0, 0, 0.07);
-
 }
 
 /* footer */
-
-
-.footer {
+/* .footer {
   background-color: #2a2a2a;
   color: #fff;
   padding-top: 4rem;
@@ -359,6 +378,47 @@ h2 {
 
 .footer a:hover {
   text-decoration: none;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 0;
+  color: #fff;
+} */
+ .footer { 
+  background-color: #2a2a2a;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff; 
+  margin: 0 15px;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer a:hover {
+  color: rgb(95, 202, 199); 
+  text-decoration: none;
+}
+
+/* Active / focus / clicked links */
+.footer a:focus,
+.footer a:active {
+  color: rgb(95, 202, 199); 
+  outline: none;
 }
 
 .footer-logo img {
