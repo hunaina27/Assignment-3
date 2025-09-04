@@ -1,6 +1,18 @@
-/* HERO SECTION seconf one FIX */
-.hero-text h1 {
-  font-size: 2rem;
+/* navbar */
+/* logo responsive */
+.logo-img {
+  height: 120px;
+  
+}
+
+@media (max-width: 991px) {
+  .logo-img {
+    height: 3.6rem !important;
+  }
+
+}/* HERO SECTION  */
+.h-1 {
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -9,15 +21,19 @@
   font-size: 1rem;
 }
 
+
 @media (min-width: 768px) {
-  .hero-text h1 {
+  .h-1 {
     font-size: 3rem;
-    line-height: 1.3;
+    line-height: 1;
   }
-  .hero-text p {
+ .hero-text p {
     font-size: 1.2rem;
   }
+
 }
+
+ 
 
 @media (min-width: 1200px) {
   .hero-text h1 {
